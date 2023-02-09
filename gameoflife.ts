@@ -1,3 +1,5 @@
+// Description: Game of Life in TypeScript as implemented at https://go.dev/
+
 type Field = {
   s: Array<Array<boolean>>;
   w: number;
