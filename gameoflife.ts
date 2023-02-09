@@ -89,16 +89,23 @@ function Print(l: Life): string {
   return buf;
 }
 
+function sleep(time: number) {
+    // @ts-ignore
+    return new Promise((resolve) => setTimeout(resolve, time));
+}
 
 function main() {
-
-    const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+  function run() {
     let l = NewLife(40, 15);
     for (let i = 0; i < 300; i++) {
-        Step(l);
-        console.log(Print(l));
-         sleep(100);
+      Step(l);
+      console.log(Print(l));
     }
+  }
+
+  sleep(1000).then(() => {
+    run();
+  });
 }
 
 main();
