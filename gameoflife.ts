@@ -1,4 +1,8 @@
-// Description: Game of Life in TypeScript as implemented at https://go.dev/
+/*
+ * @remarks
+ * Game of Life in TypeScript as implemented at https://go.dev/
+ *
+ */
 
 type Field = {
   s: Array<Array<boolean>>;
