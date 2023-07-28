@@ -1,4 +1,3 @@
 ```bash
-tsc gameoflife.ts
-node gameoflife.js
+tsc gameoflife.ts && node gameoflife.js
 ````
